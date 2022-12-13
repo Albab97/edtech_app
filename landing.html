@@ -10,6 +10,22 @@
     <title>Edtech Platform</title>
 </head>
 <body>
+    <div class="sideBar" id="sideBar">
+        <a href="#" id="close" onclick="closeSideBar()"><i class="fa-solid fa-xmark"></i></a>
+        <div class="sideBarContent">
+            <h3>Login</h3>
+            <p>or  <a href="#">create your account</a></p>
+            <div class="mobile">
+                <div class="select"><img src="./img/icons8-india-48.png" alt="flag"/><span>+91 <i class="fa-solid fa-angle-down"></i></span></div>
+                <input type="number" placeholder="Enter your mobile number">
+            </div>
+            <div class="loginBtns">
+                <button class="btn loginBtn">Login</button>
+                <a class="mailLink" href="#">Continue with email</a>
+            </div>
+            <div class="sideBarFooter">Having trouble? Please contact help@edtech.com for further support.</div>
+        </div>
+    </div>
     <header>
         <div class="logo_img">
             <img src="./img/Michigan_State_logo_PNG1.png" alt="logo">
@@ -17,7 +33,7 @@
         <nav>
             <ul class="nav_btns">
                 <li><div><button class="btn refer"><i class="fa-solid fa-gift"></i> Refer & Earn</button></div></li>
-                <li><div><button class="btn login">Login</button></div></li>
+                <li><div><button class="btn login" id="login" onclick="openSideBar()">Login</button></div></li>
             </ul>
         </nav>
     </header>
@@ -40,6 +56,9 @@
             </div>
             <div class="cover">  
             </div>
+        </section>
+        <section>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur numquam quia deleniti totam ex voluptatum ipsa vero animi minus eveniet.
         </section>
     </main>
     <script src="app.js"></script>
